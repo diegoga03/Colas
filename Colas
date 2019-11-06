@@ -1,0 +1,42 @@
+class Queue:
+  def __init__(self):
+      self.__data = []
+      self.__size = 0
+   def get_length( self):
+      return self.__size
+   def is_empty(self):
+      return self.__size == 0
+   def enqueue(self, value):
+      self.__data.append( value)
+      self.__size +=1
+   def dequeue( self ):
+      return self.__data.pop(0)
+   def to_string(self):
+      print(self.data)
+			
+class DoubleQueue:
+	def __init__(self):
+			self.__data = []
+	def get_length( self):
+      return self.__size		
+	def is_empty(self):
+      return self.__size == 0
+	def enqueue(self, value):
+      self.__data.append( value)
+      self.__size +=1
+   def dequeue( self ):
+      return self.__data.pop(0)
+	def add_last(self, value):
+			self.__data.extend(value)
+			self.__size +=1
+	def add_first(self, value):
+			self.__data.append
+			self.__size +=1
+	def del_first(self):
+			self.__data.pop(0)
+			self.__size -=1
+	def del_last(self):
+			self.__data.remove
+			self.__size -=1
+	def to_string(self):
+      print(self.data)
